@@ -47,20 +47,29 @@ export const About = () => {
           </p>
         </div>
       </RoughNotationGroup>
-      <Button
-        variant="secondary"
-        className="px-4 mt-4 font-semibold dark:bg-slate-500"
-      >
-        <Link
-          href="/shivaji-resume.pdf"
-          download="shivaji-resume"
-          target="_blank"
-          className="flex space-x-2"
+      <div className="flex space-x-4">
+        <Button
+          variant="secondary"
+          className="px-4 mt-4 font-semibold dark:bg-slate-500"
         >
-          <span>Resume</span>
-          <MoveRight />
-        </Link>
-      </Button>
+          <Link
+            href="/shivaji-resume.pdf"
+            download="shivaji-resume"
+            target="_blank"
+            className="flex space-x-2"
+          >
+            <span>Resume</span>
+            <MoveRight />
+          </Link>
+        </Button>
+
+        <Button
+          variant="secondary"
+          className="px-4 mt-4 font-semibold cursor-default dark:bg-slate-500"
+        >
+          <span>Hire me</span>
+        </Button>
+      </div>
     </div>
   );
 };

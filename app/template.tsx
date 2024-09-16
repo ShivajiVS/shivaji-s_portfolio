@@ -13,7 +13,6 @@ export default function Template({ children }: { children: ReactNode }) {
         duration: 0.6,
         // damping: false,
         // bounce: false,
-        // mass: true,
       }}
     >
       {children}
