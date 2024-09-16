@@ -1,4 +1,4 @@
-import { HomeIcon, Package, Linkedin, GithubIcon } from "lucide-react";
+import { HomeIcon, Package, Linkedin, GithubIcon, Code2 } from "lucide-react";
 import Link from "next/link";
 
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
@@ -16,7 +16,7 @@ const navLinks = [
   {
     title: "Projects",
     icon: (
-      <Package className="w-full h-full text-neutral-600 dark:text-neutral-300" />
+      <Code2 className="w-full h-full text-neutral-600 dark:text-neutral-300" />
     ),
     href: "/projects",
   },
@@ -40,7 +40,7 @@ const navLinks = [
 export function NavBar() {
   return (
     <div className="absolute z-50 max-w-full -translate-x-1/2 bottom-1 md:mb-10 md:bottom-0 left-1/2">
-      <Dock className="items-end px-4 pb-3 bg-white bg-opacity-95 dark:bg-slate-500">
+      <Dock className="items-end px-4 pb-3 bg-white rounded-full bg-opacity-95 dark:bg-slate-500">
         {navLinks.map(({ href, title, icon }) => (
           <Link
             href={href}
@@ -50,14 +50,14 @@ export function NavBar() {
               title === "Linkedin" || title === "Github" ? "_blank" : "_self"
             }
           >
-            <DockItem className="bg-gray-200 rounded-full aspect-square dark:bg-slate-700">
+            <DockItem className="rounded-full hover:bg-gray-100 aspect-square dark:hover:bg-slate-700">
               <DockLabel>{title}</DockLabel>
               <DockIcon>{icon}</DockIcon>
             </DockItem>
           </Link>
         ))}
         <Separator orientation="vertical" className="h-10" />
-        <DockItem className="bg-gray-200 rounded-full aspect-square dark:bg-slate-700">
+        <DockItem className="rounded-full hover:bg-gray-100 aspect-square dark:hover:bg-slate-700">
           <DockLabel>Theme</DockLabel>
           <DockIcon>
             <DarkmoodToggler />

@@ -139,7 +139,7 @@ function DockItem({ children, className }: DockItemProps) {
   const widthTransform = useTransform(
     mouseDistance,
     [-distance, 0, distance],
-    [40, magnification * 0.9, 40] // Adjusted magnification to be smaller
+    [40, magnification * 0.7, 40] // Adjusted magnification to be smaller
   );
 
   const width = useSpring(widthTransform, spring);
