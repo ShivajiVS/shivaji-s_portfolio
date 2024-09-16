@@ -1,4 +1,4 @@
-import { HomeIcon, Package, Linkedin, GithubIcon, Code2 } from "lucide-react";
+import { HomeIcon, Linkedin, GithubIcon, Code2 } from "lucide-react";
 import Link from "next/link";
 
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
