@@ -37,8 +37,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${lora.className} antialiased flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="w-full h-screen overflow-y-auto bg-amber-50 grow dark:bg-slate-800 ">
-            <div className="max-w-2xl p-3 mx-auto mb-14 md:mb-20 selection:bg-purple-500 selection:text-white dark:text-white md:p-5">
+          <div className="w-full h-screen overflow-y-auto bg-amber-50 grow dark:bg-slate-800">
+            <div className="max-w-3xl p-3 mx-auto mb-14 md:mb-20 selection:bg-purple-500 selection:text-white dark:text-white md:p-5">
               {children}
               <Footer />
             </div>

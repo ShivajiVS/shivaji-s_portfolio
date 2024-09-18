@@ -39,9 +39,7 @@ export const About = () => {
               <span className="mx-2"> Figma designs</span>
             </RoughNotationWrapper>
             into fully functional,
-            <RoughNotationWrapper>
-              <span className="mx-2">SEO-optimized </span>
-            </RoughNotationWrapper>
+            <span className="mx-2">SEO-optimized</span>
             and performant websites. ensuring that my projects not only look
             great but are intuitive and accessible to all users.
           </p>
