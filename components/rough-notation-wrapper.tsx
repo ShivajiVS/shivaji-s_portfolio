@@ -5,7 +5,7 @@ export const RoughNotationWrapper = ({ children }: { children: ReactNode }) => {
   return (
     <span className="mx-1.5">
       <RoughNotation
-        type="highlight"
+        type="circle"
         show={true}
         color="orange"
         animationDuration={1300}

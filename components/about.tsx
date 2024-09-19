@@ -36,9 +36,9 @@ export const About = () => {
             eye for design, user experience, and accessibility. My great ability
             to convert
             <RoughNotationWrapper>
-              <span className="mx-2"> Figma designs</span>
+              <span className="mx-2"> Figma </span>
             </RoughNotationWrapper>
-            into fully functional,
+            designs into fully functional,
             <span className="mx-2">SEO-optimized</span>
             and performant websites. ensuring that my projects not only look
             great but are intuitive and accessible to all users.

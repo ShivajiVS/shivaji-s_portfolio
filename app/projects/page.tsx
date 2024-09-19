@@ -23,7 +23,7 @@ export default function page() {
         </RoughNotation>
       </div>
       <div className="mt-8 h-full flex items-center justify-center">
-        <h2 className="tracking-tight text-justify font-semibold capitalize text-2xl">
+        <h2 className="tracking-tight text-justify font-semibold capitalize text-2xl animate-ping">
           Coming soon..
         </h2>
       </div>

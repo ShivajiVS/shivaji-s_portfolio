@@ -18,10 +18,12 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex self-center justify-center space-x-1 text-base font-semibold tracking-tight md:self-baseline ">
-          <span>©Shivaji </span>
-          <span>
-            <Year />
-          </span>
+          <div className="flex items-center mt-4 md:mt-0 ">
+            <span>©Shivaji</span>
+            <span>
+              <Year />
+            </span>
+          </div>
         </div>
       </footer>
     </div>
