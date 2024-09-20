@@ -1,9 +1,3 @@
-// "use client";
-
-// getAnnotationObject={(object) =>
-//   console.log(object.isShowing() == false)
-// }
-
 import { RoughNotation } from "react-rough-notation";
 
 export default function page() {

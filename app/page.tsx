@@ -6,7 +6,7 @@ import { TeckStack } from "@/components/teck-stack";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col pt-5 space-y-6 md:px-8">
+    <main className="relative flex flex-col pt-5 space-y-6 ">
       <div>
         <h1 className="mb-3 text-2xl md:text-4xl">
           <span className="mr-2">Hey there,</span>
@@ -21,7 +21,7 @@ export default function Home() {
           </RoughNotation>
         </h1>
         <h3 className="px-1 text-base font-medium tracking-tight">
-          A Self-taught Frontend Developer
+          A Self-driven Frontend Developer.
         </h3>
       </div>
       <About />
