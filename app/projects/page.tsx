@@ -1,3 +1,4 @@
+// import { ProjectsList } from "@/components/projects-list";
 import { RoughNotation } from "react-rough-notation";
 
 export default function page() {
@@ -21,6 +22,7 @@ export default function page() {
           Coming soon..
         </h2>
       </div>
+      {/* <ProjectsList /> */}
     </section>
   );
 }

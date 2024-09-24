@@ -21,7 +21,7 @@ export default function Home() {
           </RoughNotation>
         </h1>
         <h3 className="px-1 text-base font-medium tracking-tight">
-          A Self-driven Frontend Developer.
+          A Frontend Developer.
         </h3>
       </div>
       <About />
@@ -30,3 +30,5 @@ export default function Home() {
     </main>
   );
 }
+
+// Self-driven
