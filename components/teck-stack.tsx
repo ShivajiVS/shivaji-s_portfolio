@@ -47,7 +47,7 @@ export const TeckStack = () => {
             <Button
               size="sm"
               variant="secondary"
-              className="cursor-default dark:bg-slate-600"
+              className="cursor-default dark:bg-slate-700"
             >
               {item}
             </Button>

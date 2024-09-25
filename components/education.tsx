@@ -47,7 +47,7 @@ export const Education = () => {
           }: EductionType) => (
             <Card
               key={adacemicYear}
-              className=" hover:bg-slate-500 dark:hover:bg-slate-700 dark:bg-slate-600 bg-amber-50 group"
+              className=" hover:bg-slate-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-amber-50 group"
             >
               <CardContent className="flex flex-col p-3 space-y-4 md:p-6 group-hover:text-white">
                 <div className="flex items-center justify-between">

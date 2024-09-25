@@ -1,9 +1,9 @@
-// import { ProjectsList } from "@/components/projects-list";
+import { ProjectsList } from "@/components/projects-list";
 import { RoughNotation } from "react-rough-notation";
 
 export default function page() {
   return (
-    <section className="relative flex flex-col space-y-4  h-[calc(100vh-200px)]">
+    <section className="relative flex flex-col space-y-5 md:space-y-7">
       <div>
         <RoughNotation
           type="underline"
@@ -13,16 +13,18 @@ export default function page() {
           animationDelay={300}
         >
           <span className="inline pb-3 text-lg font-bold tracking-tight capitalize text-slate-700 md:text-2xl dark:text-white">
-            Projects
+            My Projects
           </span>
         </RoughNotation>
       </div>
-      <div className="mt-8 h-full flex items-center justify-center">
-        <h2 className="tracking-tight text-justify font-semibold capitalize text-2xl animate-ping">
-          Coming soon..
-        </h2>
-      </div>
-      {/* <ProjectsList /> */}
+      <p className="font-medium text-justify hyphens-auto">
+        From concept to execution, ideas are the seeds that grow into powerful
+        solutions, nurtured by design, developed with care, and refined with
+        user experience in mind.
+      </p>
+      <ProjectsList />
     </section>
   );
 }
+
+// h-[calc(100vh-200px)]

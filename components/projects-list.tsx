@@ -6,45 +6,45 @@ type projectType = {
   description: string;
   image: string;
   sourceCode: string;
-  liveSite: string;
+  href: string;
+  techStack: string[];
 };
 
 const projects: projectType[] = [
   {
     id: 1,
-    title: "VS Search",
+    title: "The News Thub",
     description:
-      "I created a small website that incorporates advanced concepts like debouncing, caching, API aborting, and pagination. Through this project, I gained valuable experience in designing efficient and user-friendly web applications that optimize performance and data management.",
-    image:
-      "https://github.com/ShivajiKS/mimic_google_search_features/blob/main/assets/home-page.png?raw=true",
-    sourceCode: "https://github.com/ShivajiKS/mimic_google_search_features",
-    liveSite: "https://mimic-google-search-features.vercel.app/",
+      "NewsHub is a modern web application that delivers a rich news experience, optimized for performance with advanced rendering patterns and seamless API integration. Users can enjoy quick access to the latest news with robust search functionality and a streamlined interface.",
+    image: "news-website.png",
+    sourceCode: "https://github.com/ShivajiKS/NextJs_13_News_Website",
+    href: "https://next-js-13-news-hub-website-v1.vercel.app/",
+    techStack: ["typescript", "nextjs", "tailwindcss"],
   },
   {
     id: 2,
-    title: "VS Search",
-    description:
-      "I created a small website that incorporates advanced concepts like debouncing, caching, API aborting, and pagination. Through this project, I gained valuable experience in designing efficient and user-friendly web applications that optimize performance and data management.",
-    image:
-      "https://github.com/ShivajiKS/mimic_google_search_features/blob/main/assets/home-page.png?raw=true",
+    title: "Personal Portfolio",
+    description: "The website you're browsing now!",
+    image: "portfolio.png",
     sourceCode: "https://github.com/ShivajiKS/mimic_google_search_features",
-    liveSite: "https://mimic-google-search-features.vercel.app/",
+    href: "https://shivaji.vercel.app/",
+    techStack: ["typescript", "nextjs", "tailwindcss"],
   },
   {
     id: 3,
-    title: "VS Search",
+    title: "SearchJet",
     description:
-      "I created a small website that incorporates advanced concepts like debouncing, caching, API aborting, and pagination. Through this project, I gained valuable experience in designing efficient and user-friendly web applications that optimize performance and data management.",
-    image:
-      "https://github.com/ShivajiKS/mimic_google_search_features/blob/main/assets/home-page.png?raw=true",
+      "SearchJet is a high-performance search engine that leverages Google APIs to deliver reliable, comprehensive results. Advanced features such as debouncing, caching, and pagination ensure fast and seamless search experiences.",
+    image: "search-engine.png",
     sourceCode: "https://github.com/ShivajiKS/mimic_google_search_features",
-    liveSite: "https://mimic-google-search-features.vercel.app/",
+    href: "https://mimic-google-search-features.vercel.app/",
+    techStack: ["typescript", "nextjs", "tailwindcss"],
   },
 ] as const;
 
 export const ProjectsList = () => {
   return (
-    <div className="grid grid-cols-1 gap-4">
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 w-full mx-auto">
       {projects.map((item) => (
         <ProjectCard {...item} key={item.id} />
       ))}
