@@ -24,7 +24,8 @@ const projects: projectType[] = [
   {
     id: 2,
     title: "Personal Portfolio",
-    description: "The website you're browsing now!",
+    description:
+      "The website you're browsing now. Showcases my journey as a frontend developer.It highlights my expertise in building responsive,user-friendly applications using tools like React and Next.js.",
     image: "portfolio.png",
     sourceCode: "https://github.com/ShivajiKS/mimic_google_search_features",
     href: "https://shivaji.vercel.app/",

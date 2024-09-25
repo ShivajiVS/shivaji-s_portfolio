@@ -18,7 +18,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex self-center justify-center space-x-1 text-base font-semibold tracking-tight md:self-baseline ">
-          <div className="flex items-center mt-4ca md:mt-0 ">
+          <div className="flex items-center mt-4 md:mt-0 space-x-2 ">
             <span>©Shivaji</span>
             <span>
               <Year />

@@ -24,7 +24,7 @@ export const ProjectCard = ({
   return (
     <Card
       className={cn(
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full dark:bg-slate-700"
+        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full dark:bg-slate-700 rounded-lg"
       )}
     >
       <Link
@@ -46,7 +46,7 @@ export const ProjectCard = ({
       <CardHeader className="px-2 space-y-3">
         <div className="space-y-1">
           <CardTitle className="text-xl mb-1">{title}</CardTitle>
-          <p className="line-clamp-4 text-justify text-pretty text-sm ">
+          <p className="font-medium line-clamp-4 text-justify text-pretty text-sm tracking-tight leading-6 hyphens-auto">
             {description}
           </p>
         </div>
