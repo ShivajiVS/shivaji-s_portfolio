@@ -33,7 +33,7 @@ const navLinks = [
     icon: (
       <GithubIcon className="w-full h-full text-neutral-600 dark:text-neutral-300" />
     ),
-    href: "https://github.com/ShivajiKS",
+    href: "https://github.com/ShivajiVS",
   },
 ] as const;
 

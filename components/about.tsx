@@ -53,18 +53,29 @@ export const About = () => {
             </p>
 
             <p>
-              If you&apos;re on the{" "}
-              <span className="font-semibold mx-1">
+              If you&apos;re
+              <span className="font-semibold">
                 {" "}
-                hunt for a junior developer
+                looking for a junior developer
               </span>{" "}
-              to join your team, I&apos;d be delighted to discuss the
-              possibilities with you.
+              to join your team, I would love the opportunity to discuss
+              potential openings. You can download my
+              <span>
+                <Link
+                  href="/shivaji-resume.pdf"
+                  download="shivaji-resume"
+                  target="_blank"
+                  className="hover:underline text-blue-700 font-semibold px-1 hover:text-blue-500"
+                >
+                  Cv
+                </Link>
+                here
+              </span>
             </p>
           </div>
         </div>
       </RoughNotationGroup>
-      <div className="flex space-x-4">
+      {/* <div className="flex space-x-4">
         <Button
           variant="secondary"
           className="px-4 mt-4 font-semibold dark:bg-slate-500"
@@ -80,19 +91,13 @@ export const About = () => {
           </Link>
         </Button>
 
-        {/* <Button
+        <Button
           variant="secondary"
           className="px-4 mt-4 font-semibold cursor-default dark:bg-slate-500"
         >
           <span>Hire me</span>
-        </Button> */}
-      </div>
+        </Button>
+      </div> */}
     </div>
   );
 };
-
-/**
-           <RoughNotationWrapper>
-                <span className="mx-2">Self-taught</span>
-            </RoughNotationWrapper>
- */

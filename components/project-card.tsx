@@ -1,10 +1,9 @@
-// import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { Card, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import Image from "next/image";
 import { Button } from "./ui/button";
 
 export const ProjectCard = ({
@@ -12,25 +11,27 @@ export const ProjectCard = ({
   description,
   image,
   href,
+  github,
   techStack,
 }: {
   title: string;
   description: string;
   image: string;
-  sourceCode: string;
-  href: string;
+  href?: string;
+  github?: string;
   techStack: string[];
 }) => {
   return (
     <Card
       className={cn(
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full dark:bg-slate-700 rounded-lg"
+        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full bg-amber-50 dark:bg-slate-700 rounded-lg"
       )}
     >
       <Link
-        href={href || "#"}
+        href={href ? href : github!}
         target="_blank"
         className={cn("block cursor-pointer")}
+        prefetch={false}
       >
         {image && (
           <Image
@@ -70,14 +71,26 @@ export const ProjectCard = ({
 
       <CardFooter className="px-2 pb-2 flex flex-row-reverse group-hover:text-green-500">
         <div className="flex flex-row flex-wrap items-end gap-1">
-          <Link href={href} target="_blank">
-            <Badge
-              variant="outline"
-              className="flex gap-2 px-3 py-1 text-[12px] capitalize dark:bg-slate-800"
-            >
-              view project
-            </Badge>
-          </Link>
+          {github && (
+            <Link href={github} target="_blank">
+              <Badge
+                variant="outline"
+                className="flex gap-2 px-3 py-1 text-[12px] capitalize dark:bg-slate-800"
+              >
+                view github
+              </Badge>
+            </Link>
+          )}
+          {href && (
+            <Link href={href} target="_blank">
+              <Badge
+                variant="outline"
+                className="flex gap-2 px-3 py-1 text-[12px] capitalize dark:bg-slate-800"
+              >
+                view project
+              </Badge>
+            </Link>
+          )}
         </div>
       </CardFooter>
     </Card>

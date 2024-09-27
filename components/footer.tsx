@@ -4,7 +4,7 @@ import { Year } from "@/components/year";
 
 export const Footer = () => {
   return (
-    <div className="py-4 mt-3 border-t dark:border-white mb-20 md:mt-6">
+    <div className="py-4 mt-3 border-t dark:border-white mb-28 md:mt-6">
       <footer className="flex flex-col items-baseline space-y-3 md:flex-row md:justify-between">
         <div className="flex space-x-2 tracking-tight">
           <span className="text-base font-semibold"> Built with:</span>
