@@ -56,7 +56,7 @@ export const About = () => {
                 looking for a junior developer
               </span>{" "}
               to join your team, I would love the opportunity to discuss
-              potential openings. You can download my
+              potential openings. You can see my
               <span>
                 <Link
                   href="/shivaji-resume.pdf"
@@ -64,9 +64,8 @@ export const About = () => {
                   target="_blank"
                   className="hover:underline text-blue-700 font-semibold px-1 hover:text-blue-500"
                 >
-                  Cv
+                  CV here..
                 </Link>
-                here
               </span>
             </p>
           </div>
