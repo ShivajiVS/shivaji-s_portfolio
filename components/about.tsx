@@ -20,8 +20,8 @@ export const About = () => {
         <div className="mt-4 ">
           <div className="text-sm leading-6 text-justify whitespace-normal md:text-base md:leading-7 hyphens-auto space-y-1.5">
             <p>
-              <span className="font-semibold mx-1">
-                I&apos;m Shivaji, A Self-driven Frontend Developer
+              <span className="font-semibold mx-1 tracking-tighter">
+                I&apos;m Shivaji, A Self-taught Frontend Developer
               </span>{" "}
               based in Hyderabad, India. Born and raised in Andhra Pradesh. I
               started coding in 2017 during my first year of diploma studies,

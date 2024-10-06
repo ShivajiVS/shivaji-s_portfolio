@@ -1,30 +1,34 @@
 import { RoughNotation } from "react-rough-notation";
+import { useMemo } from "react";
 
 import { Button } from "./ui/button";
 
-const technologies = [
-  "JavaScript",
-  "React.js",
-  "TypeScript",
-  "Redux Toolkit",
-  "Zustand",
-  "Next.js",
-  "Tailwind CSS",
-  "React Native",
-  "Zod",
-  "React Hook Form",
-  "React Query",
-  "Firebase",
-  "PostgreSQL",
-  "Drizzle ORM",
-  "Clerk Auth",
-  "Git",
-  "Photoshop",
-  "Figma",
-  "Vs Code",
-] as const;
-
 export const TeckStack = () => {
+  const technologies = useMemo(
+    () => [
+      "JavaScript",
+      "React.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "Zustand",
+      "Next.js",
+      "Tailwind CSS",
+      "React Native",
+      "Zod",
+      "React Hook Form",
+      "React Query",
+      "Firebase",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Clerk Auth",
+      "Git",
+      "Photoshop",
+      "Figma",
+      "VS Code",
+    ],
+    []
+  );
+
   return (
     <div>
       <RoughNotation
@@ -35,9 +39,11 @@ export const TeckStack = () => {
         animationDelay={300}
       >
         <span className="inline pb-3 text-lg font-bold tracking-tight capitalize text-slate-700 md:text-2xl dark:text-white">
-          Tech stack & Tools
+          Technologies & Tools I Work With
         </span>
       </RoughNotation>
+
+      {/* flex flex-wrap */}
       <div className="flex flex-wrap gap-2 mt-4 ">
         {technologies.map((item) => (
           <div
