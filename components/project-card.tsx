@@ -24,7 +24,7 @@ export const ProjectCard = ({
   return (
     <Card
       className={cn(
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full bg-amber-50 dark:bg-slate-700 rounded-lg"
+        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full bg-amber-50 dark:bg-slate-700 rounded-lg dark:ring-2"
       )}
     >
       <Link
