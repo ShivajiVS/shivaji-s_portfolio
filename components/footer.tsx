@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="py-4 mt-6 border-t dark:border-white mb-24 md:mt-10">
+    <div className="py-4 mt-6 border-t dark:border-white md:mt-10">
       <footer className="w-full flex flex-col items-center space-y-3 md:flex-row md:justify-between md:items-baseline">
         <div className="flex space-x-2 text-muted-foreground tracking-tighter">
           <span className="text-base font-semibold"> Built with:</span>

@@ -18,7 +18,7 @@ export const About = () => {
         </RoughNotation>
 
         <div className="mt-4 ">
-          <div className="text-sm leading-6 text-justify whitespace-normal md:text-base md:leading-7 hyphens-auto space-y-1.5">
+          <div className="text-sm leading-6 text-justify whitespace-normal md:leading-7 hyphens-auto space-y-1.5">
             <p>
               <span className="font-semibold mx-1 tracking-tighter">
                 I&apos;m Shivaji, A Self-taught Frontend Developer

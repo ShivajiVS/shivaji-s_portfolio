@@ -39,7 +39,7 @@ const navLinks = [
 
 export function NavBar() {
   return (
-    <div className="absolute z-50 max-w-full -translate-x-1/2 bottom-1 left-1/2">
+    <div className="fixed z-50 max-w-full translate-x-[-50%] bottom-0 left-1/2">
       <Dock className="items-end px-4 pb-3 bg-white rounded-full bg-opacity-95 dark:bg-slate-500">
         {navLinks.map(({ href, title, icon }) => (
           <Link
