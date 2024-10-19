@@ -17,7 +17,7 @@ export const About = () => {
           </span>
         </RoughNotation>
 
-        <div className="mt-4 ">
+        <div className="mt-4">
           <div className="text-sm leading-6 text-justify whitespace-normal md:leading-7 hyphens-auto space-y-1.5">
             <p>
               <span className="font-semibold mx-1 tracking-tighter">
@@ -57,43 +57,28 @@ export const About = () => {
               </span>{" "}
               to join your team, I would love the opportunity to discuss
               potential openings. You can see my
-              <span>
-                <Link
-                  href="/shivaji-resume.pdf"
-                  download="shivaji-resume"
-                  target="_blank"
-                  className="hover:underline text-blue-700 font-semibold px-1 hover:text-blue-500"
-                >
-                  CV here..
-                </Link>
-              </span>
+              <RoughNotation
+                type="circle"
+                show={true}
+                color="orange"
+                animationDuration={1300}
+                animationDelay={300}
+              >
+                <span>
+                  <Link
+                    href="/shivaji-resume.pdf"
+                    download="shivaji-resume"
+                    target="_blank"
+                    className=" font-semibold px-2 hover:font-bold hover:text-muted-foreground text-base"
+                  >
+                    Resume
+                  </Link>
+                </span>
+              </RoughNotation>
             </p>
           </div>
         </div>
       </RoughNotationGroup>
-      {/* <div className="flex space-x-4">
-        <Button
-          variant="secondary"
-          className="px-4 mt-4 font-semibold dark:bg-slate-500"
-        >
-          <Link
-            href="/shivaji-resume.pdf"
-            download="shivaji-resume"
-            target="_blank"
-            className="flex space-x-2 items-center"
-          >
-            <span>Resume</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </Button>
-
-        <Button
-          variant="secondary"
-          className="px-4 mt-4 font-semibold cursor-default dark:bg-slate-500"
-        >
-          <span>Hire me</span>
-        </Button>
-      </div> */}
     </div>
   );
 };
