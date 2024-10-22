@@ -1,3 +1,4 @@
+import { FadeUp } from "./fade-up";
 import { ProjectCard } from "./project-card";
 
 type projectType = {
@@ -56,7 +57,9 @@ export const ProjectsList = () => {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 w-full mx-auto">
       {projects.map((item) => (
-        <ProjectCard {...item} key={item.id} />
+        <FadeUp key={item.id} duration={0.8}>
+          <ProjectCard {...item} />
+        </FadeUp>
       ))}
     </div>
   );

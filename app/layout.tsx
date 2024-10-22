@@ -6,21 +6,6 @@ import { NavBar } from "@/components/nav-bar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/footer";
 
-// import localFont from "next/font/local";
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-// ${geistSans.variable} ${geistMono.variable}
-
 const lora = Lora({ subsets: ["latin-ext"] });
 
 export const metadata: Metadata = {

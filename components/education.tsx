@@ -1,6 +1,7 @@
 import { RoughNotation } from "react-rough-notation";
 
 import { Card, CardContent } from "./ui/card";
+import { FadeUp } from "./fade-up";
 
 type EductionType = {
   collageName: string;
@@ -45,30 +46,27 @@ export const Education = () => {
             Specialization,
             ...item
           }: EductionType) => (
-            <Card
-              key={adacemicYear}
-              className=" hover:bg-slate-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-amber-50 group"
-            >
-              <CardContent className="flex flex-col p-3 space-y-4 md:p-6 group-hover:text-white">
-                <div className="flex items-center justify-between">
-                  <div className="flex flex-col text-sm font-bold tracking-tight capitalize md:flex-row md:text-base">
-                    <h1>{collageName}</h1>
-                    {item.university && (
-                      <h1 className="mt-1 md:mt-0 ">
-                        <span className="hidden px-2 md:inline">-</span>
-                        {item.university}
-                      </h1>
-                    )}
+            <FadeUp duration={1} delay={0.6} key={adacemicYear}>
+              <Card className=" hover:bg-slate-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-amber-50 group">
+                <CardContent className="flex flex-col p-3 space-y-4 md:p-6 group-hover:text-white">
+                  <div className="flex items-center justify-between">
+                    <div className="flex flex-col text-sm font-bold tracking-tight capitalize md:flex-row">
+                      <h1>{collageName}</h1>
+                      {item.university && (
+                        <h1 className="mt-1 md:mt-0 ">
+                          <span className="hidden px-2 md:inline">-</span>
+                          {item.university}
+                        </h1>
+                      )}
+                    </div>
+                    <h3 className="text-xs font-medium">{adacemicYear}</h3>
                   </div>
-                  <h3 className="text-xs font-light md:text-sm ">
-                    {adacemicYear}
-                  </h3>
-                </div>
-                <h2 className="text-sm font-medium tracking-tight capitalize md:text-base">
-                  {Specialization}
-                </h2>
-              </CardContent>
-            </Card>
+                  <h2 className="text-sm font-medium tracking-tight capitalize">
+                    {Specialization}
+                  </h2>
+                </CardContent>
+              </Card>
+            </FadeUp>
           )
         )}
       </div>
