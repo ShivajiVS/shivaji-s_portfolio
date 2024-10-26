@@ -38,7 +38,7 @@ export const Education = () => {
           Education
         </span>
       </RoughNotation>
-      <div className={`flex flex-col gap-6 mt-4 `}>
+      <div className="flex flex-col gap-6 mt-4">
         {education.map(
           ({
             collageName,
@@ -46,7 +46,7 @@ export const Education = () => {
             Specialization,
             ...item
           }: EductionType) => (
-            <FadeUp duration={1} delay={0.6} key={adacemicYear}>
+            <FadeUp duration={1} key={adacemicYear}>
               <Card className=" hover:bg-slate-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-amber-50 group">
                 <CardContent className="flex flex-col p-3 space-y-4 md:p-6 group-hover:text-white">
                   <div className="flex items-center justify-between">
@@ -70,7 +70,6 @@ export const Education = () => {
           )
         )}
       </div>
-      <div></div>
     </section>
   );
 };

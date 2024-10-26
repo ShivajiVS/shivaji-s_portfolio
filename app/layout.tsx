@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Lora } from "next/font/google";
 
 import "./globals.css";
@@ -8,9 +8,45 @@ import { Footer } from "@/components/footer";
 
 const lora = Lora({ subsets: ["latin-ext"] });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   title: "Shivajii.dev",
-  description: "Shivajii's portfolio..",
+  description:
+    "Frontend Developer skilled in React, Next.js, and Tailwind CSS. Experienced in building SEO-optimized, responsive web applications with a focus on user experience.",
+  authors: [{ name: "Kondeti Shivaji", url: "https://shivaji.vercel.app" }],
+  keywords: [
+    "shivajii.dev",
+    "kondeti shivaji",
+    "kondeti sivaji",
+    "sivaji kondeti",
+    "shivaji kondeti",
+    "shivaji Portfolio",
+    "Shivajii's portfolio",
+    "Frontend Developer",
+    "React Developer",
+    "Frontend React Developer",
+    "React Native Developer",
+    "web Developer",
+    "Next.js Developer",
+    "Tailwind CSS",
+    "Responsive Design",
+    "SEO",
+    "JavaScript",
+    "Web Developer Portfolio",
+    "User Experience",
+    "Accessible Web Design",
+    "High-performance Websites",
+    "Full-stack Developer",
+    "TypeScript",
+    "Next.js 14",
+    "React Native",
+    "UI/UX Design",
+  ],
 };
 
 export default function RootLayout({
