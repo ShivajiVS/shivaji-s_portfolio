@@ -57,7 +57,7 @@ export function NavBar() {
           </Link>
         ))}
         <Separator orientation="vertical" className="h-10" />
-        <DockItem className="rounded-full hover:bg-gray-100 aspect-square dark:hover:bg-slate-700">
+        <DockItem className="rounded-full hover:bg-g  ray-100 aspect-square dark:hover:bg-slate-700">
           <DockLabel>Theme</DockLabel>
           <DockIcon>
             <DarkmoodToggler />
