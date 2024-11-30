@@ -9,6 +9,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "light-mode-gradient": "linear-gradient(45deg, #63D9B3, #ffefba)",
+        "dark-mode-gradient": "linear-gradient(45deg, #0d1741, #63D9B3)",
+      },
+      keyframes: {
+        "gradient-animation": {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+      },
+      animation: {
+        "gradient-light": "gradient-animation 10s ease infinite",
+        "gradient-dark": "gradient-animation 10s ease infinite",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

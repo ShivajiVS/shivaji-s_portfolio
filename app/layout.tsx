@@ -58,7 +58,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${lora.className} antialiased flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="w-full h-screen overflow-y-auto bg-amber-50 grow dark:bg-slate-800">
+          <div className="w-full h-screen overflow-y-auto grow bg-light-mode-gradient bg-[length:400%_400%] animate-gradient-light dark:bg-dark-mode-gradient dark:animate-gradient-dark">
             <div className="max-w-3xl p-3 mb-20 mx-auto selection:bg-purple-500 selection:text-white dark:text-white">
               {children}
               <Footer />
