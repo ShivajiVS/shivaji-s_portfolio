@@ -27,4 +27,3 @@ export default function page() {
   );
 }
 
-// h-[calc(100vh-200px)]

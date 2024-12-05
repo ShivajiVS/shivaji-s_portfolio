@@ -13,6 +13,16 @@ type projectType = {
 
 const projects: projectType[] = [
   {
+    id: 0,
+    title: "Svella",
+    description:
+      "Designed and developed an e-commerce website with a focus on user experience and security.Optimized site performance by implementing CSR, SSG, and SSR, reducing initial load times by 40% and improving user retention by 10% due to faster content delivery.",
+    image: "ecommerce.png",
+    github: "https://github.com/ShivajiVS/ecommerce",
+    href: "https://ecommerce-vsy.vercel.app/",
+    techStack: ["ReactJs", "Nextjs", "Tailwindcss"],
+  },
+  {
     id: 1,
     title: "The News Thub",
     description:
@@ -20,7 +30,7 @@ const projects: projectType[] = [
     image: "news-website.png",
     github: "https://github.com/ShivajiVS/NextJs_13_News_Website",
     href: "https://next-js-13-news-hub-website-v1.vercel.app/",
-    techStack: ["typescript", "nextjs", "tailwindcss"],
+    techStack: ["Typescript", "Nextjs", "Tailwindcss"],
   },
   {
     id: 2,
@@ -28,9 +38,9 @@ const projects: projectType[] = [
     description:
       "The website you're browsing now. Showcases my journey as a frontend developer.It highlights my expertise in building responsive,user-friendly applications using tools like React and Next.js.",
     image: "portfolio.png",
-    github: "https://github.com/ShivajiVS/mimic_google_search_features",
+    github: "https://github.com/ShivajiVS/shivaji-s_portfolio",
     href: "https://shivaji.vercel.app/",
-    techStack: ["typescript", "nextjs", "tailwindcss"],
+    techStack: ["Typescript", "Nextjs", "Tailwindcss"],
   },
   {
     id: 3,
@@ -40,7 +50,7 @@ const projects: projectType[] = [
     image: "search-engine.png",
     github: "https://github.com/ShivajiVS/mimic_google_search_features",
     href: "https://mimic-google-search-features.vercel.app/",
-    techStack: ["typescript", "nextjs", "tailwindcss"],
+    techStack: ["Typescript", "Nextjs", "Tailwindcss"],
   },
   {
     id: 4,
@@ -48,8 +58,17 @@ const projects: projectType[] = [
     description:
       "Our system includes the ability to sign up, login, reset passwords, update email address, change password, logout, and even delete accounts. Additionally, users can add, update, and remove addresses, making it easy to keep their contact information up to date.",
     image: "authentication-system.png",
-    github: "https://github.com/ShivajiVS/NextJs_13_News_Website",
-    techStack: ["React native", "Firebase", "tailwindcss"],
+    github: "https://github.com/ShivajiVS/react-native-login-system",
+    techStack: ["React native", "Firebase", "Tailwindcss"],
+  },
+  {
+    id: 5,
+    title: "Food Ordering Application",
+    description:
+      "Developed a cross-platform food ordering mobile application using React Native, improving user engagement by 25% and increasing accessibility for both iOS and Android users. Utilized Redux Toolkit for optimized data ow and Firebase for real-time storage and user authentication",
+    image: "food-ordering.png",
+    github: "https://github.com/ShivajiVS/Food_App",
+    techStack: ["React native", "Firebase", "Redux"],
   },
 ] as const;
 
