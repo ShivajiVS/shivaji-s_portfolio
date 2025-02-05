@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { Code2, GithubIcon, HomeIcon, Linkedin } from "lucide-react";
 import { usePathname } from "next/navigation";
-import Link from "next/Link";
+import Link from "next/link";
 import type { FC } from "react";
 import { DarkmoodToggler } from "./dark-mode-toggler";
 
