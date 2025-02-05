@@ -15,7 +15,7 @@ const pages = [
     path: "https://www.linkedin.com/in/shivajiks/",
     icon: Linkedin,
   },
-  { name: "Github", path: "/https://github.com/ShivajiVS", icon: GithubIcon },
+  { name: "Github", path: "https://github.com/ShivajiVS", icon: GithubIcon },
 ];
 
 const BottomNavbar: FC = () => {
