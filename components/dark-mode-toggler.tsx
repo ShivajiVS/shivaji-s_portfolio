@@ -19,12 +19,12 @@ export const DarkmoodToggler: React.FC = () => {
     <div>
       {currentTheme === "dark" ? (
         <SunIcon
-          className="cursor-pointer  text-slate-900 dark:text-gray-100"
+          className="cursor-pointer  text-slate-900 dark:text-gray-100 h-4 w-4"
           onClick={() => setTheme("light")}
         />
       ) : (
         <MoonIcon
-          className="cursor-pointer text-slate-900 dark:text-gray-100"
+          className="cursor-pointer text-slate-900 dark:text-gray-100 h-4 w-4"
           onClick={() => setTheme("dark")}
         />
       )}
