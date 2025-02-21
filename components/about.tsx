@@ -20,37 +20,38 @@ export const About = () => {
         <div className="mt-4">
           <div className="text-sm leading-6 text-justify whitespace-normal md:leading-7 hyphens-auto space-y-1.5">
             <p>
-              <span className="font-semibold mx-1 tracking-tighter">
+              <span className="font-semibold mr-1 tracking-tighter">
                 I&apos;m Shivaji, A Self-taught Frontend Developer
               </span>{" "}
-              based in Hyderabad, India. Born and raised in Andhra Pradesh. I
-              started coding in 2017 during my first year of diploma studies,
-              with C as my first language. After facing challenges with C, I
-              transitioned to Java, where I found comfort. My passion for coding
-              eventually led me to web development, and once I discovered{" "}
-              <span className="font-semibold mx-1">JavaScript</span>, I embraced
-              the React ecosystem fully.
+              based in Hyderabad, India. Originally from Andhra Pradesh, I
+              discovered my passion for coding in 2017 during my first year of
+              diploma studies. Starting with C, I faced challenges but
+              persevered, eventually finding my footing with Java. This journey
+              ignited my love for programming, leading me to explore web
+              development. When I discovered JavaScript and the React ecosystem,
+              I knew I had found my calling.
             </p>
 
             <p>
-              I have a strong foundation in{" "}
+              Today, I specialize in building modern, responsive, and
+              user-friendly web applications. My tech stack includes
               <span className="font-semibold mx-1">
                 JavaScript, TypeScript, ReactJS, NextJS, React Native,
                 TailwindCSS, and Node,
               </span>{" "}
-              which gives me a comprehensive understanding of modern web
-              technologies. I have a keen eye for design, user experience, and
-              accessibility.{" "}
+              allowing me to create seamless, performant, and scalable
+              solutions.{" "}
               <span className="font-semibold mx-1">
-                My great ability to convert Figma designs into fully functional,
-                SEO-optimized and performant websites.
+                I take pride in my ability to transform Figma designs into fully
+                functional, SEO-optimized, and accessible websites,
               </span>
-              ensuring that my projects not only look great but are intuitive
-              and accessible to all users.
+              ensuring they not only look great but also deliver exceptional
+              user experiences.
             </p>
-
             <p>
-              If you&apos;re
+              With a strong focus on design, usability, and performance, I’m
+              passionate about crafting digital experiences that are both
+              intuitive and inclusive. If you&apos;re
               <span className="font-semibold">
                 {" "}
                 looking for a junior developer
