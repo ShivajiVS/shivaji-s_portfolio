@@ -3,7 +3,6 @@ import { Lora } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Footer } from "@/components/footer";
 import BottomNavbar from "@/components/bottom-nav-bar";
 
 const lora = Lora({ subsets: ["latin-ext"] });
@@ -69,7 +68,6 @@ export default function RootLayout({
           <div className="w-full h-screen overflow-y-auto grow bg-amber-50 dark:bg-slate-800">
             <div className="max-w-2xl p-3 mb-20 mx-auto selection:bg-purple-500 selection:text-white dark:text-white">
               {children}
-              <Footer />
             </div>
           </div>
           <BottomNavbar />

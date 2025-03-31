@@ -47,7 +47,7 @@ export const Education = () => {
             ...item
           }: EductionType) => (
             <FadeUp duration={1} key={adacemicYear}>
-              <Card className=" hover:bg-slate-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-amber-50 group">
+              <Card className=" hover:bg-slate-500 cursor-pointer dark:hover:bg-slate-600 dark:bg-slate-700 bg-amber-50 group">
                 <CardContent className="flex flex-col p-3 space-y-4 md:p-6 group-hover:text-white">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col text-sm font-bold tracking-tight capitalize md:flex-row">
@@ -73,6 +73,3 @@ export const Education = () => {
     </section>
   );
 };
-
-
-

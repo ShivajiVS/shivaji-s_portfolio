@@ -1,9 +1,9 @@
 import { ProjectsList } from "@/components/projects-list";
 import { RoughNotation } from "react-rough-notation";
 
-export default function page() {
+export default function Projects() {
   return (
-    <section className="relative flex flex-col space-y-5 md:space-y-7">
+    <section className="relative flex flex-col space-y-4 md:space-y-5">
       <div>
         <RoughNotation
           type="underline"
@@ -17,7 +17,7 @@ export default function page() {
           </span>
         </RoughNotation>
       </div>
-      <p className="font-medium text-justify hyphens-auto">
+      <p className="font-semibold text-sm text-justify leading-6 whitespace-normal md:leading-7 hyphens-auto space-y-1.5">
         From concept to execution, ideas are the seeds that grow into powerful
         solutions, nurtured by design, developed with care, and refined with
         user experience in mind.
@@ -26,4 +26,3 @@ export default function page() {
     </section>
   );
 }
-

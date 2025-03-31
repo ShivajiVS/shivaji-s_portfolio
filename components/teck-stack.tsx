@@ -14,17 +14,13 @@ export const TeckStack = () => {
       "Next.js",
       "Tailwind CSS",
       "React Native",
-      "Zod",
-      "React Hook Form",
       "React Query",
+      "Playwright",
       "Firebase",
-      "PostgreSQL",
-      "Drizzle ORM",
       "Clerk Auth",
       "Git",
       "Photoshop",
       "Figma",
-      "VS Code",
     ],
     []
   );
