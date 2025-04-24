@@ -7,7 +7,7 @@ import Projects from "./projects/page";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col pt-5 space-y-6 ">
+    <main className="relative flex flex-col pt-5 space-y-6 text-black dark:text-white">
       <section>
         <h1 className="mb-3 text-2xl md:text-5xl">
           <span className="mr-2">Hey there,</span>

@@ -12,12 +12,10 @@ export default function Projects() {
           animationDuration={1300}
           animationDelay={300}
         >
-          <span className="inline pb-3 text-lg font-bold tracking-tight capitalize text-slate-700 md:text-2xl dark:text-white">
-            My Projects
-          </span>
+          <span className="inline pb-3 text-lg font-bold tracking-tight capitalize  md:text-2xl text-black dark:text-white"></span>
         </RoughNotation>
       </div>
-      <p className="font-semibold text-sm text-justify leading-6 whitespace-normal md:leading-7 hyphens-auto space-y-1.5">
+      <p className="font-semibold text-sm text-justify leading-6 whitespace-normal md:leading-7 hyphens-auto space-y-1.5 text-black dark:text-white">
         From concept to execution, ideas are the seeds that grow into powerful
         solutions, nurtured by design, developed with care, and refined with
         user experience in mind.
