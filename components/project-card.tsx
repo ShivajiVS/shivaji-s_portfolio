@@ -4,7 +4,6 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Card, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
 
 export const ProjectCard = ({
   title,
@@ -57,13 +56,12 @@ export const ProjectCard = ({
               key={item}
               className="flex items-center justify-center text-center"
             >
-              <Button
-                size="sm"
+              <Badge
                 variant="outline"
-                className="cursor-default dark:bg-slate-800 capitalize"
+                className="bg-slate-100 dark:bg-slate-800"
               >
                 {item}
-              </Button>
+              </Badge>
             </div>
           ))}
         </div>
@@ -75,7 +73,7 @@ export const ProjectCard = ({
             <Link href={github} target="_blank">
               <Badge
                 variant="outline"
-                className="flex gap-2 px-3 py-1 text-[12px] capitalize dark:bg-slate-800"
+                className="flex gap-2 px-3 text-[12px] capitalize dark:bg-slate-800"
               >
                 view github
               </Badge>
@@ -85,7 +83,7 @@ export const ProjectCard = ({
             <Link href={href} target="_blank">
               <Badge
                 variant="outline"
-                className="flex gap-2 px-3 py-1 text-[12px] capitalize dark:bg-slate-800"
+                className="flex gap-2 px-2 text-[12px] capitalize dark:bg-slate-800"
               >
                 view project
               </Badge>
