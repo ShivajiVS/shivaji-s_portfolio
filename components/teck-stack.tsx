@@ -1,7 +1,7 @@
 import { RoughNotation } from "react-rough-notation";
 import { useMemo } from "react";
 
-import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
 
 export const TeckStack = () => {
   const technologies = useMemo(
@@ -15,10 +15,12 @@ export const TeckStack = () => {
       "Tailwind CSS",
       "React Native",
       "React Query",
+      "Jest",
       "Playwright",
       "Firebase",
+      "Supabase",
       "Clerk Auth",
-      "Git",
+      "Git & Github",
       "Photoshop",
       "Figma",
     ],
@@ -46,13 +48,12 @@ export const TeckStack = () => {
             key={item}
             className="flex items-center justify-center text-center"
           >
-            <Button
-              size="sm"
+            <Badge
               variant="secondary"
-              className="cursor-default dark:bg-slate-700"
+              className="bg-slate-100 dark:bg-slate-700"
             >
               {item}
-            </Button>
+            </Badge>
           </div>
         ))}
       </div>

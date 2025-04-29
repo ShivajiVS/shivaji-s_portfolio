@@ -12,7 +12,9 @@ export default function Projects() {
           animationDuration={1300}
           animationDelay={300}
         >
-          <span className="inline pb-3 text-lg font-bold tracking-tight capitalize  md:text-2xl text-black dark:text-white"></span>
+          <span className="inline pb-3 text-lg font-bold tracking-tight capitalize md:text-2xl text-black dark:text-white">
+            Projects
+          </span>
         </RoughNotation>
       </div>
       <p className="font-semibold text-sm text-justify leading-6 whitespace-normal md:leading-7 hyphens-auto space-y-1.5 text-black dark:text-white">
