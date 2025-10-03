@@ -78,11 +78,11 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: view dist
-        run: cd dist && tree
+        run: cd out && tree
 
       - name: Deploy to S3 bucket
         run: |
-          aws s3 sync ./dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
+          aws s3 sync ./out s3://${{ secrets.AWS_S3_BUCKET }} --delete
           echo "✅ Deployment completed"
 
       - name: Invalidate CloudFront cache
